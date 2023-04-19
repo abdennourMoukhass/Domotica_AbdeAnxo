@@ -4,6 +4,7 @@
 
 Material necesario
 • Raspberry Pi 400
+• Raspberry Pi 3
 • Pantalla Táctil
 • ESP32
 • ESP32CAM
