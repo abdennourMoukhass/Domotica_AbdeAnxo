@@ -1,0 +1,17 @@
+alias: Apagar Luz
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.esp32_iot4_boton
+    from: "on"
+    to: "off"
+condition: []
+action:
+  - service: light.turn_off
+    data: {}
+    target:
+      area_id: abdean
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: light.esp32_iot4_luz_led
+mode: single
