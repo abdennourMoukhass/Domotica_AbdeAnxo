@@ -15,3 +15,67 @@ action:
       device_id: e0d1bb5f9d75acbc8129b20b2697024e
       entity_id: light.esp32_iot4_luz_led
 mode: single
+
+alias: Apagar Ventilador a 25ªC
+description: ""
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.esp32_iot4_temperatura
+    below: 25
+condition: []
+action:
+  - service: switch.turn_off
+    data: {}
+    target:
+      area_id: abdean
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: switch.esp32_iot4_rele
+mode: single
+
+
+alias: Acender ventilador a 25º
+description: ""
+trigger:
+  - platform: numeric_state
+    entity_id: sensor.esp32_iot4_temperatura
+    above: 25
+condition: []
+action:
+  - service: switch.turn_on
+    data: {}
+    target:
+      area_id: abdean
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: switch.esp32_iot4_rele
+mode: single
+
+alias: Encender Luz
+description: ""
+trigger:
+  - platform: state
+    entity_id:
+      - binary_sensor.esp32_iot4_boton
+    from: "off"
+    to: "on"
+    for:
+      hours: 0
+      minutes: 0
+      seconds: 0
+condition: []
+action:
+  - service: light.turn_on
+    data:
+      color_temp: 247
+      brightness_pct: 35
+      transition: 36
+      rgb_color:
+        - 52
+        - 101
+        - 164
+      brightness_step_pct: 29
+    target:
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: light.esp32_iot4_luz_led
+      area_id: abdean
+mode: single
+
