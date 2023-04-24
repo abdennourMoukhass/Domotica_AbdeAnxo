@@ -29,3 +29,4 @@ Material necesario
 
 ![imaxemaqueta](https://user-images.githubusercontent.com/129267302/232457295-65626993-a827-426c-ae8e-9e79e2096288.png)
 
+![imaxe](https://user-images.githubusercontent.com/129267302/233946913-6199e0c0-f067-4459-a4d0-54d5cdfdf04a.png)
