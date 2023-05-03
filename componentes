@@ -1,0 +1,19 @@
+Nome	Tipo	Cantidade	Ligazóns
+ESP32 WROOM	soc	1	Amazon
+Raspberry Pi 400	soc	1	Amazon
+ESP32 CAM	soc	1	Amazon
+DHT11	Sensor	1	Amazon
+Sensor de luz	Sensor	1	Amazon
+Sensor PIR	Sensor	1	Amazon
+Botón	Sensor	1	Amazon
+Relé	Disparador	1	Amazon
+Ventilador	Disparador	1	Amazon
+LED RGB	Disparador	3	Amazon
+Servo	Disparador	1	Amazon
+Zumbador	Disparador	1	Amazon
+Pantalla táctil	Visualizador	1	Amazon
+LCED ou OLED	Visualizador	1	Amazon
+Alimentación Raspberry	Fonte de alimentación	1	Amazon
+Alimentación ESP	Fonte de alimentación	1	Amazon
+Batería 18650 + indicador de carga	Fonte de alimentación	1	Amazon
+Cables dupont M-F e F-F	Conectores	40	Amazon
