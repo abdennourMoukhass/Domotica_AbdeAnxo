@@ -1,0 +1,15 @@
+alias: Apagar Ventilador a <25ªC      #Nome da automatización
+description: ""
+trigger:                              #Condicións nas que se activa (detección de <25ªC polo DHT11)
+  - platform: numeric_state
+    entity_id: sensor.esp32_iot4_temperatura
+    below: 25
+condition: []
+action:                               #Activación do relé a baixar de 25ªC
+  - service: switch.turn_off
+    data: {}
+    target:
+      area_id: abdean
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: switch.esp32_iot4_rele
+mode: single
