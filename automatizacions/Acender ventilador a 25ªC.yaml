@@ -1,0 +1,15 @@
+alias: Acender ventilador a 25º       #Nome da automatización
+description: ""
+trigger:                              #Condicións nas que se activa (detección de 25ªC polo DHT11)
+  - platform: numeric_state
+    entity_id: sensor.esp32_iot4_temperatura
+    above: 25
+condition: []
+action:                               #Activación do relé ao chegar aos 25ªC
+  - service: switch.turn_on
+    data: {}
+    target:
+      area_id: abdean
+      device_id: e0d1bb5f9d75acbc8129b20b2697024e
+      entity_id: switch.esp32_iot4_rele
+mode: single
